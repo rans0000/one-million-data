@@ -8,11 +8,22 @@
     <body>
         <div class="wrapper-all">
             <h1>Experimenting with <span class="emphasis">&#8216;1 Million data&#8217;</span>
-                <span class="subheading">Create 1 million records in JavaScript</span></h1>
-            <p>An javascript experiment/POC to work with a data set containing one million data</p>
+                <span class="subheading">Create 1 million records in JavaScript</span>
+            </h1>
+            <div class="progress-bar">
+                <div class="progress-strip"></div>
+                <div class="progress-text">0%</div>
+            </div>
+            <div class="anim-container">
+                <div class="anim-ball"></div>
+            </div>
+            <!--<hr>-->
             <ul>
-                <li><a href="create-data.html">create 1 million records in JavaScript</a></li>
+                <li>Generate 1 million data with a <strong>for...loop</strong> <button type="button" class="btn-generic" id="btn-gen-forloop-data">Generate</button><br>
+                    <span class="warning">(warning! will take a while to create the data)</span>
+                </li>
             </ul>
+            <button type="button" class="btn-plus">&#43;</button>
         </div>
         <script src="js/jquery.min.js"></script>
         <script src="js/create-data.js"></script>

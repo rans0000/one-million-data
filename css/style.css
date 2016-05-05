@@ -1,4 +1,4 @@
-*, *:before, *:after{padding: 0;margin: 0;}
+*, *:before, *:after{padding: 0;margin: 0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;outline: 0;vertical-align: baseline;}
 body{font: 16px/18px Georgia, 'Times New Roman', Times, Baskerville, Georgia, serif;background: #fff;color: #333;}
 .wrapper-all{width: 800px;margin: 50px auto 0;max-width: 100%;}
 h1{font-size: 21px;margin-bottom: 36px;text-align: center;border-bottom: 1px solid  #ddd;padding-bottom: 8px;}
@@ -6,6 +6,30 @@ p{margin-bottom: 18px;}
 a, a:link{color: #5a8ed6;}
 a:visited{color: #3766a8;}
 a:hover, a:focus{color: #37a851;}
+a:active{color: #333;}
 li{list-style: disc;margin-left: 35px;margin-bottom: 3px;}
+hr{height: 0;border: 0;border-bottom: 1px dashed  #ccc;background: #fff;margin-bottom: 35px;}
+
+@keyframes anim-rollingball{
+    0%{left: 0%;}
+    100%{left: 100%;}
+}
+
 .emphasis{color: #1d71b9;}
 .subheading{display: block;font-size: .75em;color: #999;margin-top: 6px;}
+.warning{color: #e84747;font-size: .9em;}
+
+.btn-generic{display: inline-block;margin: 0;padding: 0 10px;line-height: 25px;border: 1px solid #1d71b9;cursor: pointer;border-radius: 3px;background: #1d71b9;color: #fff;transition: .3s;}
+.btn-generic:hover,.btn-generic:focus{background: #37a851;border-color: #37a851;}
+.btn-generic:active{background: #333;border-color: #fff;}
+
+.btn-plus{width: 50px;height: 50px;border-radius: 0 0 0 100%;background: #1d71b9;color: #fff;position: fixed;top: 0;right: 0;border: 0;font-size: 40px;line-height: 50px;text-indent: 14px;cursor: pointer;}
+.btn-plus:hover,.btn-plus:focus{background: #37a851;}
+.btn-plus:active{background: #333;}
+
+.progress-bar{position: relative;width: 100%;height: 18px;margin-bottom: 18px;border: 1px solid  #1d71b9;}
+.progress-strip{position: absolute;top: 0;left: 0;height: 100%;background: #1d71b9;width: 0;}
+.progress-text{position: absolute;left: 50%;top: 0;color: #1d71b9;background: #fff;line-height: 16px;font-family: monospace;transform: translateX(-50%);padding: 0 10px;opacity: .9;}
+
+.anim-container{position: relative;height: 50px;margin: 0 0 36px;width: 100%;}
+.anim-ball{position: absolute;top: 0;left: 0;width: 50px;height: 50px;border-radius: 50%;background: #1d71b9;animation: anim-rollingball 2s linear infinite alternate;transform: translateX(-50%);}
