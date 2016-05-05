@@ -1,0 +1,10 @@
+*, *:before, *:after{padding: 0;margin: 0;}
+body{font: 16px/18px Georgia, 'Times New Roman', Times, Baskerville, Georgia, serif;background: #fff;color: #333;}
+.wrapper-all{width: 800px;margin: 50px auto 0;max-width: 100%;}
+h1{font-size: 21px;margin-bottom: 18px;text-align: center;border-bottom: 1px solid  #ddd;padding-bottom: 8px;}
+p{margin-bottom: 18px;}
+a, a:link{color: #5a8ed6;}
+a:visited{color: #3766a8;}
+a:hover, a:focus{color: #37a851;}
+.emphasis{color: #1d71b9;}
+li{list-style: disc;margin-left: 35px;margin-bottom: 3px;}
