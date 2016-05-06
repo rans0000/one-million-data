@@ -1,0 +1,3 @@
+A POC to see how to handle one million data in a JavaScript app.
+
+In progress...
